@@ -1,0 +1,23 @@
+slice_name: Where do the tenants come from?
+description: null
+certified_by: null
+certification_details: null
+viz_type: country_map
+params:
+  datasource: 32__table
+  viz_type: country_map
+  slice_id: 212
+  select_country: uzbekistan
+  entity: address
+  metric: count
+  adhoc_filters: []
+  number_format: ~g
+  linear_color_scheme: superset_seq_1
+  extra_form_data: {}
+  dashboards:
+  - 13
+query_context: '{"datasource":{"id":32,"type":"table"},"force":false,"queries":[{"filters":[],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":["count"],"annotation_layers":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"32__table","viz_type":"country_map","slice_id":212,"select_country":"uzbekistan","entity":"address","metric":"count","adhoc_filters":[],"number_format":"~g","linear_color_scheme":"superset_seq_1","extra_form_data":{},"dashboards":[13],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 852a9f51-49c9-4633-b387-6e6f0389921f
+version: 1.0.0
+dataset_uuid: d68a68b9-7668-453e-a912-962fbb048f11

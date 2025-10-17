@@ -1,0 +1,72 @@
+slice_name: How many times has each bike been used?
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_bar
+params:
+  datasource: 31__table
+  viz_type: echarts_timeseries_bar
+  slice_id: 211
+  x_axis: city
+  x_axis_sort_asc: true
+  x_axis_sort_series: name
+  x_axis_sort_series_ascending: true
+  metrics:
+  - count
+  groupby:
+  - bike_id
+  contributionMode: null
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: start_date
+  timeseries_limit_metric: count
+  order_desc: true
+  row_limit: 500
+  truncate_metric: false
+  show_empty_columns: false
+  comparison_type: values
+  annotation_layers: []
+  forecastPeriods: 10
+  forecastInterval: 0.8
+  orientation: vertical
+  x_axis_title: Cities
+  x_axis_title_margin: 15
+  y_axis_title: The number of use one bike
+  y_axis_title_margin: 15
+  y_axis_title_position: Left
+  sort_series_type: avg
+  sort_series_ascending: true
+  color_scheme: supersetColors
+  show_value: true
+  stack: null
+  only_total: true
+  minorTicks: true
+  zoomable: false
+  show_legend: false
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  y_axis_format: ~g
+  logAxis: false
+  minorSplitLine: true
+  truncateXAxis: false
+  truncateYAxis: false
+  y_axis_bounds:
+  - null
+  - null
+  rich_tooltip: false
+  tooltipTimeFormat: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 13
+query_context: '{"datasource":{"id":31,"type":"table"},"force":false,"queries":[{"filters":[{"col":"start_date","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[{"columnType":"BASE_AXIS","sqlExpression":"city","label":"city","expressionType":"SQL"},"bike_id"],"metrics":["count"],"orderby":[["count",false]],"annotation_layers":[],"row_limit":500,"series_columns":["bike_id"],"series_limit":0,"series_limit_metric":"count","order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["city"],"columns":["bike_id"],"aggregates":{"count":{"operator":"mean"}},"drop_missing_columns":true}},{"operation":"flatten"}]}],"form_data":{"datasource":"31__table","viz_type":"echarts_timeseries_bar","slice_id":211,"x_axis":"city","x_axis_sort_asc":true,"x_axis_sort_series":"name","x_axis_sort_series_ascending":true,"metrics":["count"],"groupby":["bike_id"],"contributionMode":null,"adhoc_filters":[{"clause":"WHERE","comparator":"No
+  filter","expressionType":"SIMPLE","operator":"TEMPORAL_RANGE","subject":"start_date"}],"timeseries_limit_metric":"count","order_desc":true,"row_limit":500,"truncate_metric":false,"show_empty_columns":false,"comparison_type":"values","annotation_layers":[],"forecastPeriods":10,"forecastInterval":0.8,"orientation":"vertical","x_axis_title":"Cities","x_axis_title_margin":15,"y_axis_title":"The
+  number of use one bike","y_axis_title_margin":15,"y_axis_title_position":"Left","sort_series_type":"avg","sort_series_ascending":true,"color_scheme":"supersetColors","show_value":true,"stack":null,"only_total":true,"minorTicks":true,"zoomable":false,"show_legend":false,"legendType":"scroll","legendOrientation":"top","x_axis_time_format":"smart_date","y_axis_format":"~g","logAxis":false,"minorSplitLine":true,"truncateXAxis":false,"truncateYAxis":false,"y_axis_bounds":[null,null],"rich_tooltip":false,"tooltipTimeFormat":"smart_date","extra_form_data":{},"dashboards":[13],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: b6cd1c23-db4e-44af-9967-47576bcc5779
+version: 1.0.0
+dataset_uuid: b4449c9b-0048-45d9-a530-11d72296e344

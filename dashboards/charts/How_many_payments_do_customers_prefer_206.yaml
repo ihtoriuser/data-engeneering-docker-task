@@ -1,0 +1,61 @@
+slice_name: How many payments do customers prefer?
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_bar
+params:
+  datasource: 26__table
+  viz_type: echarts_timeseries_bar
+  slice_id: 206
+  x_axis: 'date_of_rent '
+  x_axis_sort_series: name
+  x_axis_sort_series_ascending: true
+  metrics:
+  - count
+  groupby:
+  - 'number_of_payments '
+  adhoc_filters: []
+  timeseries_limit_metric: count
+  order_desc: true
+  row_limit: 10
+  truncate_metric: true
+  show_empty_columns: true
+  annotation_layers: []
+  orientation: vertical
+  x_axis_title_margin: 15
+  y_axis_title: ''
+  y_axis_title_margin: 15
+  y_axis_title_position: Left
+  sort_series_type: sum
+  sort_series_ascending: true
+  color_scheme: supersetColors
+  show_value: true
+  only_total: true
+  minorTicks: true
+  show_legend: false
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  y_axis_format: SMART_NUMBER
+  logAxis: false
+  minorSplitLine: true
+  truncateXAxis: true
+  truncateYAxis: false
+  y_axis_bounds:
+  - null
+  - null
+  rich_tooltip: false
+  tooltipTimeFormat: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 13
+query_context: '{"datasource":{"id":26,"type":"table"},"force":false,"queries":[{"filters":[],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[{"columnType":"BASE_AXIS","sqlExpression":"date_of_rent
+  ","label":"date_of_rent ","expressionType":"SQL"},"number_of_payments "],"metrics":["count"],"orderby":[["count",false]],"annotation_layers":[],"row_limit":10,"series_columns":["number_of_payments
+  "],"series_limit":0,"series_limit_metric":"count","order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["date_of_rent
+  "],"columns":["number_of_payments "],"aggregates":{"count":{"operator":"mean"}},"drop_missing_columns":false}},{"operation":"rename","options":{"columns":{"count":null},"level":0,"inplace":true}},{"operation":"flatten"}]}],"form_data":{"datasource":"26__table","viz_type":"echarts_timeseries_bar","slice_id":206,"x_axis":"date_of_rent
+  ","x_axis_sort_series":"name","x_axis_sort_series_ascending":true,"metrics":["count"],"groupby":["number_of_payments
+  "],"adhoc_filters":[],"timeseries_limit_metric":"count","order_desc":true,"row_limit":10,"truncate_metric":true,"show_empty_columns":true,"annotation_layers":[],"orientation":"vertical","x_axis_title_margin":15,"y_axis_title":"","y_axis_title_margin":15,"y_axis_title_position":"Left","sort_series_type":"sum","sort_series_ascending":true,"color_scheme":"supersetColors","show_value":true,"only_total":true,"minorTicks":true,"show_legend":false,"legendType":"scroll","legendOrientation":"top","x_axis_time_format":"smart_date","y_axis_format":"SMART_NUMBER","logAxis":false,"minorSplitLine":true,"truncateXAxis":true,"truncateYAxis":false,"y_axis_bounds":[null,null],"rich_tooltip":false,"tooltipTimeFormat":"smart_date","extra_form_data":{},"dashboards":[13],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 6056ed13-9a59-4171-9cf6-6a84793f92a8
+version: 1.0.0
+dataset_uuid: a8441bdd-0df8-4012-95f5-8ba5b168414b

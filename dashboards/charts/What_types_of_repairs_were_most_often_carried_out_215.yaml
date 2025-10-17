@@ -1,0 +1,64 @@
+slice_name: What types of repairs were most often carried out?
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_bar
+params:
+  datasource: 29__table
+  viz_type: echarts_timeseries_bar
+  slice_id: 215
+  x_axis: mark
+  x_axis_sort_series: name
+  x_axis_sort_series_ascending: true
+  metrics:
+  - count
+  groupby:
+  - type_of_repairing
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: bought_date
+  timeseries_limit_metric: count
+  order_desc: true
+  row_limit: 50
+  truncate_metric: true
+  show_empty_columns: true
+  annotation_layers: []
+  orientation: vertical
+  x_axis_title_margin: 15
+  y_axis_title: ''
+  y_axis_title_margin: 15
+  y_axis_title_position: Left
+  sort_series_type: sum
+  sort_series_ascending: true
+  color_scheme: supersetColors
+  show_value: true
+  only_total: true
+  minorTicks: true
+  show_legend: true
+  legendType: scroll
+  legendOrientation: bottom
+  x_axis_time_format: smart_date
+  y_axis_format: SMART_NUMBER
+  logAxis: false
+  minorSplitLine: true
+  truncateXAxis: true
+  truncateYAxis: false
+  y_axis_bounds:
+  - null
+  - null
+  rich_tooltip: true
+  tooltipSortByMetric: true
+  tooltipTimeFormat: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 13
+query_context: '{"datasource":{"id":29,"type":"table"},"force":false,"queries":[{"filters":[{"col":"bought_date","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[{"columnType":"BASE_AXIS","sqlExpression":"mark","label":"mark","expressionType":"SQL"},"type_of_repairing"],"metrics":["count"],"orderby":[["count",false]],"annotation_layers":[],"row_limit":50,"series_columns":["type_of_repairing"],"series_limit":0,"series_limit_metric":"count","order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["mark"],"columns":["type_of_repairing"],"aggregates":{"count":{"operator":"mean"}},"drop_missing_columns":false}},{"operation":"rename","options":{"columns":{"count":null},"level":0,"inplace":true}},{"operation":"flatten"}]}],"form_data":{"datasource":"29__table","viz_type":"echarts_timeseries_bar","slice_id":215,"x_axis":"mark","x_axis_sort_series":"name","x_axis_sort_series_ascending":true,"metrics":["count"],"groupby":["type_of_repairing"],"adhoc_filters":[{"clause":"WHERE","comparator":"No
+  filter","expressionType":"SIMPLE","operator":"TEMPORAL_RANGE","subject":"bought_date"}],"timeseries_limit_metric":"count","order_desc":true,"row_limit":50,"truncate_metric":true,"show_empty_columns":true,"annotation_layers":[],"orientation":"vertical","x_axis_title_margin":15,"y_axis_title":"","y_axis_title_margin":15,"y_axis_title_position":"Left","sort_series_type":"sum","sort_series_ascending":true,"color_scheme":"supersetColors","show_value":true,"only_total":true,"minorTicks":true,"show_legend":true,"legendType":"scroll","legendOrientation":"bottom","x_axis_time_format":"smart_date","y_axis_format":"SMART_NUMBER","logAxis":false,"minorSplitLine":true,"truncateXAxis":true,"truncateYAxis":false,"y_axis_bounds":[null,null],"rich_tooltip":true,"tooltipSortByMetric":true,"tooltipTimeFormat":"smart_date","extra_form_data":{},"dashboards":[13],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: fc57d1f6-6773-41ca-96e2-5b2d3890a682
+version: 1.0.0
+dataset_uuid: fbb9be50-69ff-4506-b129-2361655e3f1f
