@@ -11,8 +11,8 @@ This project provides a Docker Compose setup to run Apache Superset and automati
 
 1.  **Clone the Repository:**
     ```bash
-    git clone <your-repository-url>
-    cd <your-repo-directory>
+    git clone https://github.com/ihtoriuser/data-engeneering-docker-task.git
+    cd data-engeneering-docker-task
     ```
 
 2.  **Prepare `init.sql` (Optional but Recommended for Initialization):**
