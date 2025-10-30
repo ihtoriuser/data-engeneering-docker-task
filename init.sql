@@ -43,7 +43,7 @@ CREATE TABLE public.bikes (
 );
 
 
-ALTER TABLE public.bikes OWNER TO superset;
+ALTER TABLE public.bikes OWNER TO postgres;
 
 --
 -- TOC entry 223 (class 1259 OID 24615)
@@ -59,7 +59,7 @@ CREATE SEQUENCE public.bikes_bike_id_seq
     CACHE 1;
 
 
-ALTER SEQUENCE public.bikes_bike_id_seq OWNER TO superset;
+ALTER SEQUENCE public.bikes_bike_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 4841 (class 0 OID 0)
@@ -89,7 +89,7 @@ CREATE TABLE public.clients (
 );
 
 
-ALTER TABLE public.clients OWNER TO superset;
+ALTER TABLE public.clients OWNER TO postgres;
 
 --
 -- TOC entry 219 (class 1259 OID 24596)
@@ -105,7 +105,7 @@ CREATE SEQUENCE public.clients_client_id_seq
     CACHE 1;
 
 
-ALTER SEQUENCE public.clients_client_id_seq OWNER TO superset;
+ALTER SEQUENCE public.clients_client_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 4842 (class 0 OID 0)
@@ -130,7 +130,7 @@ CREATE TABLE public.expences (
 );
 
 
-ALTER TABLE public.expences OWNER TO superset;
+ALTER TABLE public.expences OWNER TO postgres;
 
 --
 -- TOC entry 221 (class 1259 OID 24606)
@@ -146,7 +146,7 @@ CREATE SEQUENCE public.expences_expence_id_seq
     CACHE 1;
 
 
-ALTER SEQUENCE public.expences_expence_id_seq OWNER TO superset;
+ALTER SEQUENCE public.expences_expence_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 4843 (class 0 OID 0)
@@ -175,7 +175,7 @@ CREATE TABLE public.rents (
 );
 
 
-ALTER TABLE public.rents OWNER TO superset;
+ALTER TABLE public.rents OWNER TO postgres;
 
 --
 -- TOC entry 225 (class 1259 OID 24628)
@@ -191,7 +191,7 @@ CREATE SEQUENCE public.rents_rent_number_seq
     CACHE 1;
 
 
-ALTER SEQUENCE public.rents_rent_number_seq OWNER TO superset;
+ALTER SEQUENCE public.rents_rent_number_seq OWNER TO postgres;
 
 --
 -- TOC entry 4844 (class 0 OID 0)
@@ -232,7 +232,7 @@ CREATE TABLE public.solo_general (
 );
 
 
-ALTER TABLE public.solo_general OWNER TO superset;
+ALTER TABLE public.solo_general OWNER TO postgres;
 
 --
 -- TOC entry 217 (class 1259 OID 24585)
@@ -248,7 +248,7 @@ CREATE SEQUENCE public.solo_general_id_seq
     CACHE 1;
 
 
-ALTER SEQUENCE public.solo_general_id_seq OWNER TO superset;
+ALTER SEQUENCE public.solo_general_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 4845 (class 0 OID 0)
